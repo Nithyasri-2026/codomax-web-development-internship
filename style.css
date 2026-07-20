@@ -1,14 +1,62 @@
-body {
-    font-family: Arial;
-    text-align: center;
-    margin-top: 100px;
-    background: #f4f4f4;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
 }
 
-h1 {
-    color: blue;
+html{
+    scroll-behavior:smooth;
 }
 
-button {
-    padding: 10px 20px;
+nav{
+    background:#1e90ff;
+    text-align:center;
+    padding:15px;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:20px;
+    font-size:18px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+section{
+    height:100vh;
+    text-align:center;
+    padding-top:100px;
+}
+
+.home{
+    background:#dbeafe;
+}
+
+.hero{
+    background:#fef3c7;
+}
+
+.about{
+    background:#dcfce7;
+}
+
+button{
+    margin-top:20px;
+    padding:10px 20px;
+    background:#1e90ff;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0056b3;
 }
