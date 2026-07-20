@@ -1,3 +1,5 @@
-function showMessage() {
-    alert("Welcome to my web page!");
-}
+const button = document.querySelector("button");
+
+button.addEventListener("click", function () {
+    alert("Contact me as through email");
+});
