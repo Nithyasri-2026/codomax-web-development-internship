@@ -1,5 +1,7 @@
-const button = document.querySelector("button");
+const button = document.querySelector("#hero button");
 
 button.addEventListener("click", function () {
-    alert("Contact me as through email");
+    document.getElementById("contact").scrollIntoView({
+        behavior: "smooth"
+    });
 });
