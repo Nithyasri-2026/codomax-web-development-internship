@@ -30,9 +30,9 @@ nav a:hover{
 }
 
 section{
-    height:100vh;
+    min-height:100vh;
     text-align:center;
-    padding-top:100px;
+    padding:100px 20px;
 }
 
 .home{
@@ -47,6 +47,38 @@ section{
     background:#dcfce7;
 }
 
+.skills{
+    background:#fde68a;
+}
+
+.education{
+    background:#e9d5ff;
+}
+
+.skills ul{
+    list-style:none;
+    margin-top:20px;
+}
+
+.skills li{
+    font-size:20px;
+    margin:15px;
+}
+
+.contact{
+    background:#d8f3dc;
+}
+
+.contact h2{
+    margin-bottom:15px;
+}
+
+.contact p{
+    font-size:20px;
+    margin:10px 0;
+    font-weight:bold;
+}
+
 button{
     margin-top:20px;
     padding:10px 20px;
@@ -59,4 +91,11 @@ button{
 
 button:hover{
     background:#0056b3;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
