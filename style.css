@@ -9,31 +9,71 @@ html{
     scroll-behavior:smooth;
 }
 
+body{
+    line-height:1.6;
+    background:#f8f9fa;
+}
+
+/* Navigation */
+
 nav{
-    background:#1e90ff;
-    text-align:center;
-    padding:15px;
+    background:#1e3a8a;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:18px;
     position:sticky;
     top:0;
+    box-shadow:0 3px 10px rgba(0,0,0,0.2);
 }
 
 nav a{
     color:white;
     text-decoration:none;
-    margin:20px;
     font-size:18px;
     font-weight:bold;
+    transition:.3s;
 }
 
 nav a:hover{
     color:yellow;
+    transform:scale(1.1);
 }
+
+/* Sections */
 
 section{
     min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
     text-align:center;
-    padding:100px 20px;
+    padding:60px 20px;
 }
+
+h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+h2{
+    font-size:38px;
+    margin-bottom:20px;
+    color:#1e3a8a;
+}
+
+h3{
+    font-size:28px;
+    margin-top:20px;
+}
+
+p{
+    font-size:20px;
+    max-width:700px;
+}
+
+/* Background Colors */
 
 .home{
     background:#dbeafe;
@@ -55,47 +95,63 @@ section{
     background:#e9d5ff;
 }
 
+.contact{
+    background:#d8f3dc;
+}
+
+/* Skills */
+
 .skills ul{
     list-style:none;
     margin-top:20px;
 }
 
 .skills li{
-    font-size:20px;
-    margin:15px;
+    background:white;
+    width:260px;
+    margin:12px auto;
+    padding:12px;
+    border-radius:8px;
+    box-shadow:0 4px 8px rgba(0,0,0,.1);
+    font-size:18px;
 }
 
-.contact{
-    background:#d8f3dc;
-}
-
-.contact h2{
-    margin-bottom:15px;
-}
+/* Contact */
 
 .contact p{
+    margin:8px;
     font-size:20px;
-    margin:10px 0;
     font-weight:bold;
 }
 
+/* Button */
+
 button{
-    margin-top:20px;
-    padding:10px 20px;
-    background:#1e90ff;
-    color:white;
+    margin-top:25px;
+    padding:12px 30px;
+    font-size:18px;
     border:none;
-    border-radius:5px;
+    border-radius:30px;
+    background:#2563eb;
+    color:white;
     cursor:pointer;
+    transition:.3s;
 }
 
 button:hover{
-    background:#0056b3;
+    background:#1d4ed8;
+    transform:translateY(-3px);
 }
 
+/* Footer */
+
 footer{
-    background:#222;
+    background:#1f2937;
     color:white;
     text-align:center;
     padding:20px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
