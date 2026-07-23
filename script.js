@@ -5,4 +5,3 @@ button.addEventListener("click", function () {
         behavior: "smooth"
     });
 });
-  
