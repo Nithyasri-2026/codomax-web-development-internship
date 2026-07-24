@@ -14,6 +14,12 @@ html{
 body{
     background:#f8fafc;
     line-height:1.6;
+
+}
+
+img{
+    max-width:100%;
+    height:auto;
 }
 
 /* Navigation */
@@ -29,7 +35,9 @@ nav{
     top:0;
     z-index:1000;
     box-shadow:0 3px 10px rgba(0,0,0,.2);
+    flex-wrap:wrap;
 }
+
 
 nav a{
     color:white;
@@ -236,58 +244,48 @@ footer{
     align-items:center;
 }
 
-/* Responsive */
-
-@media(max-width:768px){
+/* ===========================
+   Mobile Devices
+=========================== */
+@media (max-width:768px){
 
     nav{
-        flex-wrap:wrap;
-        gap:15px;
-        padding:15px;
+        flex-direction:column;
+        gap:12px;
     }
 
     nav a{
         font-size:16px;
     }
 
+    section{
+        padding:60px 15px;
+    }
+
     h1{
-        font-size:38px;
+        font-size:34px;
     }
 
     h2{
-        font-size:30px;
+        font-size:28px;
+    }
+
+    h3{
+        font-size:22px;
     }
 
     p{
-        font-size:17px;
-    }
-
-    .skills ul{
-        flex-direction:column;
-        align-items:center;
-    }
-
-    .skills li{
-        width:250px;
+        font-size:16px;
     }
 
     button{
         width:180px;
-    }
-}
-
-@media(max-width:480px){
-
-    nav{
-        flex-direction:column;
+        font-size:16px;
     }
 
-    h1{
-        font-size:30px;
-    }
-
-    h2{
-        font-size:26px;
+    .skills li{
+        width:100%;
+        max-width:300px;
     }
 
     .education-grid,
@@ -299,4 +297,47 @@ footer{
     .project-card{
         width:100%;
     }
+
+    .contact p{
+        font-size:17px;
+    }
+
+}
+
+/* ===========================
+   Tablet Devices
+=========================== */
+@media (min-width:769px) and (max-width:1024px){
+
+    nav{
+        gap:20px;
+    }
+
+    h1{
+        font-size:44px;
+    }
+
+    h2{
+        font-size:34px;
+    }
+
+    .education-grid{
+        grid-template-columns:1fr;
+    }
+
+    .project-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+/* ===========================
+   Desktop
+=========================== */
+@media (min-width:1025px){
+
+    section{
+        padding:80px 50px;
+    }
+
 }
