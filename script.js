@@ -1,7 +1,9 @@
 const button = document.querySelector("#hero button");
 
-button.addEventListener("click", function () {
-    document.getElementById("contact").scrollIntoView({
-        behavior: "smooth"
+if (button) {
+    button.addEventListener("click", () => {
+        document.getElementById("contact").scrollIntoView({
+            behavior: "smooth"
+        });
     });
-});
+}
