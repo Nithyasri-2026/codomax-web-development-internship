@@ -343,3 +343,30 @@ footer{
 }
 
 
+/* Scroll to Top Button */
+
+#topBtn{
+    display:none;
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    z-index:999;
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:50%;
+    width:50px;
+    height:50px;
+    font-size:22px;
+    cursor:pointer;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+    transition:0.3s;
+}
+
+#topBtn:hover{
+    background:#1d4ed8;
+    transform:scale(1.1);
+}
+
+
+
