@@ -366,3 +366,47 @@ footer{
     background:#1d4ed8;
     transform:scale(1.1);
 }
+
+
+/* Experience */
+
+.experience{
+    background:#fef9c3;
+}
+
+.experience-card{
+    background:white;
+    max-width:750px;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+    text-align:left;
+    transition:.3s;
+}
+
+.experience-card:hover{
+    transform:translateY(-8px);
+}
+
+/* Resume */
+
+.resume{
+    background:#e0f7fa;
+}
+
+.resume-btn{
+    display:inline-block;
+    margin-top:25px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:30px;
+    font-size:18px;
+    transition:.3s;
+}
+
+.resume-btn:hover{
+    background:#1d4ed8;
+    transform:scale(1.05);
+}
