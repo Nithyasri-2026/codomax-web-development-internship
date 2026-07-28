@@ -9,37 +9,38 @@
     <!-- Navigation -->
     <nav>
         <a href="#home">Home</a>
-        <a href="#hero">Hero</a>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#education">Education</a>
         <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
         <a href="#experience">Experience</a>
         <a href="#resume">Resume</a>
+         <a href="#contact">Contact</a>
     </nav>
 
     <!-- Home Section -->
-    <section id="home" class="home">
-        <h1>Welcome to My Portfolio!</h1>
-        <p>"Learning today, building tomorrow."</p>
-    </section>
+    <section id="home" class="hero">
 
-    <!-- Hero Section -->
-    <section id="hero" class="hero">
-        <h2>Hello, I'm Nithyasri</h2>
-        <p>Interested in Web Development</p>
-        <button>Contact Me</button>
-    </section>
+    <h1>Hello, I'm Nithyasri</h1>
 
+    <p class="tagline">
+        Interested in Web Development
+    </p>
+
+    <p class="quote">
+        "Learning today, building tomorrow."
+    </p>
+
+    <button id="contactBtn">Contact Me</button>
+
+</section>
     <!-- About Section -->
     <section id="about" class="about">
         <h2>About Me</h2>
         <p>
-           
-            I pursuing  my post graduate in  Computer Science and  interested in Web Development.
-            I am learning HTML, CSS and JavaScript to become a Full Stack Developer.
-            I enjoy creating innovative applications and learning new technologies.
+    I am pursuing my Master's degree in Computer Science and am interested in Web Development.
+    I am learning HTML, CSS, and JavaScript to become a Full Stack Developer.
+    I enjoy creating innovative applications and learning new technologies.
         </p>
     </section>
 
@@ -101,7 +102,8 @@
     </div>
 </section>
 
-    <section id="experience" class="experience">
+<!-- Experience Section -->
+<section id="experience" class="experience">
     <h2>Experience</h2>
 
     <div class="experience-card">
@@ -119,13 +121,15 @@
     </div>
 </section>
 
+<!-- Resume Section -->
 <section id="resume" class="resume">
     <h2>Resume</h2>
 
     <p>
         Click the button below to download my resume.
     </p>
-  <button onclick="window.open('resume.pdf')">
+
+   <button onclick="window.open('resume.pdf')">
     Download Resume
 </button>
 </section>
@@ -133,9 +137,24 @@
 <!-- Contact Section -->
 <section id="contact" class="contact">
     <h2>Contact Me</h2>
-    <p>📧 Email : nithyasriperiyakaruppan20@gmail.com</p><br>
-     <p>📱 Phone : +91 9787550836</p><br>
-    <p>📍 Location : Tiruchirappalli, Tamil Nadu</p>
+
+    <div class="contact-box">
+
+        <div class="social">
+            <a href="https://github.com/Nithyasri-2026/" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/nithyasri-p-810883372/" target="_blank">LinkedIn</a>
+        </div>
+
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+
+            <button type="submit">Send</button>
+
+            <p id="successMsg"></p>
+        </form>
+    </div>
 </section>
 
     <!-- Footer -->
