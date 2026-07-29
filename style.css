@@ -34,10 +34,12 @@ nav a{
     color:white;
     text-decoration:none;
     font-weight:bold;
+    transition:0.3s ease;
 }
 
 nav a:hover{
     color:#facc15;
+    transform:translateY(-3px);
 }
 
 /* Sections */
@@ -66,29 +68,33 @@ h1,h2{
 .hero h1{
     font-size:50px;
     margin-bottom:15px;
+    animation:slideDown 1.2s ease;
 }
 
-h2{
-    color:#60a5fa;
-}
-
-.hero{
-    background:#1e293b;
-    color:white;
-    padding:100px 20px;
-}
-
-.tagline{
-    font-size:24px;
-    color:#60a5fa;
-    margin-bottom:10px;
-}
-
+.hero p,
+.tagline,
 .quote{
-    font-size:18px;
-    font-style:italic;
-    color:#cbd5e1;
-    margin-bottom:25px;
+    animation:fadeIn 2s ease;
+}
+
+@keyframes slideDown{
+    from{
+        opacity:0;
+        transform:translateY(-50px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
 }
 
 /* Buttons */
@@ -100,12 +106,14 @@ button{
     border-radius:8px;
     cursor:pointer;
     margin-top:15px;
+    transition:0.3s ease;
 }
 
 button:hover{
     background:#1d4ed8;
+    transform:scale(1.08);
+    box-shadow:0 8px 18px rgba(37,99,235,.5);
 }
-
 /* Skills */
 .skills ul{
     list-style:none;
@@ -114,9 +122,15 @@ button:hover{
 .skills li{
     width:250px;
     margin:10px auto;
-    background:#1e293b;
+    background:#334155;
     padding:12px;
     border-radius:8px;
+    transition:.3s ease;
+}
+
+.skills li:hover{
+    transform:translateX(10px);
+    background:#2563eb;
 }
 
 /* Education & Projects */
@@ -128,6 +142,7 @@ button:hover{
     max-width:1000px;
     margin:30px auto;
 }
+
 .education-card,
 .project-card,
 .experience-card{
@@ -135,13 +150,14 @@ button:hover{
     border-radius:15px;
     padding:20px;
     box-shadow:0 5px 15px rgba(0,0,0,.3);
+    transition:.4s ease;
 }
 
 .education-card:hover,
 .project-card:hover,
 .experience-card:hover{
-    transform:translateY(-5px);
-    transition:.3s;
+    transform:translateY(-10px) scale(1.03);
+    box-shadow:0 12px 25px rgba(37,99,235,.5);
 }
 
 /* Resume */
@@ -174,18 +190,32 @@ button:hover{
     padding:12px;
     width:220px;
     border-radius:8px;
-    transition:.3s;
+    transition:.3s ease;
 }
 
 .social a:hover{
     background:#1d4ed8;
+    transform:translateX(8px);
 }
 
 #contactForm{
     background:#334155;
     padding:25px;
     border-radius:15px;
+    animation:fadeUp 1.5s ease;
 }
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
 #contactForm input,
 #contactForm textarea{
     width:100%;
@@ -237,12 +267,13 @@ footer{
     color:white;
     border:none;
     cursor:pointer;
+    transition:.3s ease;
 }
 
 #topBtn:hover{
     background:#1d4ed8;
+    transform:scale(1.2) rotate(360deg);
 }
-
 /* Responsive */
 @media(max-width:768px){
 
